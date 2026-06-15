@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- SEO -->
+  <title>Rohan Pagare | Data Scientist · ML Engineer · AI Engineer</title>
+  <meta name="description" content="Rohan Pagare — Data Scientist, Machine Learning Engineer, AI Engineer, and Python Developer. Building intelligent systems and data-driven solutions." />
+  <meta name="keywords" content="Rohan Pagare, Data Scientist, Machine Learning Engineer, AI Engineer, Python Developer, Portfolio" />
+  <meta name="author" content="Rohan Pagare" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rohan Pagare | Data Scientist · ML Engineer · AI Engineer" />
+  <meta property="og:description" content="Building intelligent systems and data-driven solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rohanjtech.github.io/" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rohan Pagare | Data Scientist · ML Engineer" />
+  <meta name="twitter:description" content="Building intelligent systems and data-driven solutions." />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.PORTFOLIO_CONFIG = {
+      github:   "https://github.com/rohanjtech/",
+      linkedin: "https://www.linkedin.com/in/rohanpagare-analytics/",
+      email:    "mailto:rohanpagare2407@gmail.com",
+      resume:   "Rohan_Pagare_Resume.pdf"
+    };
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+
+      <!-- Logo: just initials text, no bracket decoration -->
+      <a href="#home" class="nav-logo" aria-label="Rohan Pagare Home">
+        Rohan Pagare
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"           class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#about"          class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills"         class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects"       class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience"     class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certs</a></li>
+        <li><a href="#contact"        class="nav-link" data-section="contact">Contact</a></li>
+        <li>
+          <a href="Rohan_Pagare_Resume.pdf"
+             class="nav-resume-btn"
+             download="Rohan_Pagare_Resume.pdf"
+             aria-label="Download Resume">
+            <i class="fa-solid fa-file-arrow-down"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO  — left-aligned layout
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Hero Section">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+    <div class="hero-container hero-container--left">
+
+      <div class="hero-badge reveal-up" aria-label="Status badge">
+        <span class="badge-dot"></span>
+        <span>Open to opportunities</span>
+      </div>
+
+      <h1 class="hero-name reveal-up delay-1">
+        Rohan<br /><span class="name-accent">Pagare</span>
+      </h1>
+
+      <div class="hero-titles reveal-up delay-2" aria-label="Professional titles">
+        <span class="title-static">I build&nbsp;</span>
+        <span class="title-rotate" id="titleRotate" aria-live="polite">ML Models</span>
+      </div>
+
+      <p class="hero-tagline reveal-up delay-3">
+        Turning raw data into intelligent decisions —<br />
+        from exploratory analysis to production-ready AI systems.
+      </p>
+
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-rocket"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fa-solid fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-up delay-5" aria-label="Key statistics">
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+
+    </div><!-- /hero-container -->
+
+    <a href="#about" class="hero-scroll" aria-label="Scroll to About section">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">About Me</span>
+        <h2 id="about-heading" class="section-title">Bridging Data &amp; Intelligence</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Visual -->
+        <div class="about-visual reveal-left">
+          <div class="about-card-avatar">
+            <div class="avatar-placeholder" aria-label="Rohan Pagare avatar">
+              <span>RP</span>
+            </div>
+            <div class="avatar-ring" aria-hidden="true"></div>
+            <div class="avatar-ring avatar-ring-2" aria-hidden="true"></div>
+          </div>
+          <div class="about-info-chips">
+            <div class="info-chip"><i class="fa-solid fa-location-dot"></i> Mumbai, India</div>
+            <div class="info-chip"><i class="fa-solid fa-graduation-cap"></i> Data Science</div>
+            <div class="info-chip"><i class="fa-solid fa-code"></i> Python Developer</div>
+            <div class="info-chip"><i class="fa-solid fa-brain"></i> ML / AI</div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content reveal-right">
+          <p class="about-lead">
+            Data Analyst and ML Practitioner with 4+ years of experience in operational data reporting,
+            audit compliance, and campaign analytics across 500+ PAN-India locations.
+          </p>
+          <p class="about-body">
+            I design end-to-end ML pipelines using Python and Scikit-Learn, maintaining 99%+ data
+            integrity across billing and campaign datasets. My work spans the full ML lifecycle — from
+            cleaning messy datasets and crafting meaningful features to training models, evaluating
+            performance, and deploying intelligent tools.
+          </p>
+          <p class="about-body">
+            Currently a <strong>Senior Ad Operations Executive &amp; Data Analyst at UFO Moviez India Ltd.</strong>,
+            where I audit 200+ ad campaigns across 500+ cinema locations and build Excel dashboards for
+            cross-functional stakeholder reporting.
+          </p>
+
+          <div class="about-focus">
+            <h3 class="focus-title">Current Focus</h3>
+            <div class="focus-tags">
+              <span class="focus-tag"><i class="fa-solid fa-chart-line"></i> Predictive Modeling</span>
+              <span class="focus-tag"><i class="fa-solid fa-robot"></i> ML Pipelines</span>
+              <span class="focus-tag"><i class="fa-solid fa-database"></i> Data Analytics</span>
+              <span class="focus-tag"><i class="fa-solid fa-flask"></i> EDA &amp; Feature Eng.</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="Rohan_Pagare_Resume.pdf"
+               class="btn btn-primary"
+               download="Rohan_Pagare_Resume.pdf"
+               aria-label="Download Rohan Pagare Resume">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-solid fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Technical Skills</span>
+        <h2 id="skills-heading" class="section-title">Tools of the Trade</h2>
+        <p class="section-subtitle">A carefully curated stack for building data-driven solutions.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming -->
+        <div class="skill-category reveal-up delay-1">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-category-title">Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-primary"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-tag skill-tag-primary"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="skill-tag skill-tag-secondary"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-tag skill-tag-secondary"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="skill-tag skill-tag-secondary"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          </div>
+        </div>
+
+        <!-- Libraries -->
+        <div class="skill-category reveal-up delay-2">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-category-title">Libraries</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-primary">Pandas</span>
+            <span class="skill-tag skill-tag-primary">NumPy</span>
+            <span class="skill-tag skill-tag-primary">Scikit-Learn</span>
+            <span class="skill-tag skill-tag-secondary">Matplotlib</span>
+            <span class="skill-tag skill-tag-secondary">Seaborn</span>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="skill-category reveal-up delay-3">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <i class="fa-solid fa-brain" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-category-title">Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-primary">Regression</span>
+            <span class="skill-tag skill-tag-primary">Classification</span>
+            <span class="skill-tag skill-tag-primary">Feature Engineering</span>
+            <span class="skill-tag skill-tag-secondary">Model Evaluation</span>
+            <span class="skill-tag skill-tag-secondary">EDA</span>
+          </div>
+        </div>
+
+        <!-- Analytics & Reporting -->
+        <div class="skill-category reveal-up delay-4">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-category-title">Analytics &amp; Reporting</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-primary">Excel Dashboards</span>
+            <span class="skill-tag skill-tag-primary">KPI Tracking</span>
+            <span class="skill-tag skill-tag-secondary">Pivot Tables</span>
+            <span class="skill-tag skill-tag-secondary">Data Validation</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category reveal-up delay-5">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <i class="fa-solid fa-server" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-category-title">Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-primary"><i class="fa-solid fa-database"></i> MySQL</span>
+            <span class="skill-tag skill-tag-primary">MariaDB</span>
+          </div>
+        </div>
+
+        <!-- Tools & Workflow -->
+        <div class="skill-category reveal-up delay-6">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap">
+              <i class="fa-solid fa-wrench" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-category-title">Tools &amp; Workflow</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-primary"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="skill-tag skill-tag-primary"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="skill-tag skill-tag-secondary">Jupyter Notebook</span>
+            <span class="skill-tag skill-tag-secondary">VS Code</span>
+            <span class="skill-tag skill-tag-secondary">Linux CLI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS  (removed SysSage + AI Assistant)
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Featured Work</span>
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+        <p class="section-subtitle">Real problems. Real data. Real models.</p>
+      </div>
+
+      <div class="projects-grid">
+
+    <!-- Project 1: Child Height Prediction — FEATURED -->
+<article class="project-card project-card-featured reveal-up delay-1"
+         aria-label="Child Height Prediction project">
+
+  <div class="project-card-top">
+    <div class="project-icon project-icon-featured" aria-hidden="true">
+      <i class="fa-solid fa-dna"></i>
+    </div>
+
+    <!-- BOTH badges side by side in card-top, NOT absolutely positioned -->
+    <div class="project-badges">
+      <div class="project-featured-label">&#9632; Featured</div>
+      <div class="project-type-badge">Regression</div>
+    </div>
+  </div>
+
+  <h3 class="project-title">Child Height Prediction</h3>
+  <p class="project-desc">
+    End-to-end ML regression pipeline on 1,000 records with 35% missing data.
+    Engineered 4 new features from 15 parental/genetic attributes. Benchmarked
+    6 algorithms with cross-validation — achieved R² = 0.78, CV R² = 0.79,
+    MAE = 3.17 cm. Serialised with Joblib for deployment reuse.
+  </p>
+  <div class="project-tech" aria-label="Technologies used">
+    <span class="tech-tag">Python</span>
+    <span class="tech-tag">Scikit-Learn</span>
+    <span class="tech-tag">Pandas</span>
+    <span class="tech-tag">Joblib</span>
+  </div>
+  <div class="project-actions">
+    <a href="https://github.com/rohanjtech/parental-genetics-ml"
+       target="_blank" rel="noopener noreferrer"
+       class="btn-proj btn-proj-github"
+       aria-label="View Child Height Prediction on GitHub">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+    <button class="btn-proj btn-proj-demo btn-disabled" disabled
+            aria-label="Live demo not available">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+    </button>
+  </div>
+</article>
+
+        <!-- Project 2: Laptop Price Prediction -->
+        <article class="project-card reveal-up delay-2"
+                 aria-label="Laptop Price Prediction project">
+          <div class="project-card-top">
+            <div class="project-icon" aria-hidden="true">
+              <i class="fa-solid fa-laptop"></i>
+            </div>
+            <div class="project-type-badge">Regression</div>
+          </div>
+          <h3 class="project-title">Laptop Price Prediction</h3>
+          <p class="project-desc">
+            Preprocessed 1,000+ record e-commerce dataset. Achieved R² = 0.82,
+            outperforming mean-price baseline by 40%. Identified GPU tier, brand,
+            and RAM as top price-driving features via importance analysis.
+          </p>
+          <div class="project-tech" aria-label="Technologies used">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-Learn</span>
+            <span class="tech-tag">Matplotlib</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/rohanjtech/laptop-price-prediction"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-proj btn-proj-github"
+               aria-label="View Laptop Price Prediction on GitHub">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <button class="btn-proj btn-proj-demo btn-disabled" disabled
+                    aria-label="Live demo not available">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3: Heart Disease Prediction -->
+        <article class="project-card reveal-up delay-3"
+                 aria-label="Heart Disease Prediction project">
+          <div class="project-card-top">
+            <div class="project-icon" aria-hidden="true">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="project-type-badge project-type-health">Healthcare ML</div>
+          </div>
+          <h3 class="project-title">Heart Disease Prediction</h3>
+          <p class="project-desc">
+            Binary classification pipeline on 918-record medical dataset. Evaluated
+            using precision, recall, F1-score, and AUC-ROC to handle class imbalance.
+            Achieved 85% accuracy with balanced metrics across both classes.
+          </p>
+          <div class="project-tech" aria-label="Technologies used">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-Learn</span>
+            <span class="tech-tag">Seaborn</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/rohanjtech/heart-disease-prediction"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-proj btn-proj-github"
+               aria-label="View Heart Disease Prediction on GitHub">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <button class="btn-proj btn-proj-demo btn-disabled" disabled
+                    aria-label="Live demo not available">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 4: Diabetes Prediction -->
+        <article class="project-card reveal-up delay-4"
+                 aria-label="Diabetes Prediction project">
+          <div class="project-card-top">
+            <div class="project-icon" aria-hidden="true">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <div class="project-type-badge project-type-health">Healthcare ML</div>
+          </div>
+          <h3 class="project-title">Diabetes Prediction</h3>
+          <p class="project-desc">
+            Developed a predictive healthcare model to identify diabetes risk factors
+            and assist in early-stage diagnosis using clinical feature analysis and
+            classification algorithms.
+          </p>
+          <div class="project-tech" aria-label="Technologies used">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-Learn</span>
+            <span class="tech-tag">Data Analytics</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/rohanjtech/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-proj btn-proj-github"
+               aria-label="View Diabetes Prediction on GitHub">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <button class="btn-proj btn-proj-demo btn-disabled" disabled
+                    aria-label="Live demo not available">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 5: Student Marks Prediction -->
+        <article class="project-card reveal-up delay-5"
+                 aria-label="Student Marks Prediction project">
+          <div class="project-card-top">
+            <div class="project-icon" aria-hidden="true">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="project-type-badge">Regression</div>
+          </div>
+          <h3 class="project-title">Student Marks Prediction</h3>
+          <p class="project-desc">
+            Regression-based system to estimate student academic performance using
+            historical educational data, enabling proactive academic support through
+            predictive insights.
+          </p>
+          <div class="project-tech" aria-label="Technologies used">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Regression</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/rohanjtech/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-proj btn-proj-github"
+               aria-label="View Student Marks Prediction on GitHub">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <button class="btn-proj btn-proj-demo btn-disabled" disabled
+                    aria-label="Live demo not available">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </button>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+
+      <div class="projects-cta reveal-up">
+        <a href="https://github.com/rohanjtech/"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-ghost btn-wide">
+          <i class="fa-brands fa-github"></i> View All Repositories
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE  (removed AI Application Development)
+  ═══════════════════════════════════════════ -->
+  <section class="section section-alt" id="experience" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Background</span>
+        <h2 id="experience-heading" class="section-title">Experience</h2>
+        <p class="section-subtitle">Hands-on practice across the full ML development lifecycle.</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Item 1 -->
+        <div class="timeline-item reveal-up delay-1">
+          <div class="timeline-marker" aria-hidden="true">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Senior Ad Operations Executive &amp; Data Analyst</h3>
+              <span class="timeline-period">Feb 2024 – Present</span>
+            </div>
+            <p class="timeline-org">UFO Moviez India Ltd. · Mumbai</p>
+            <p class="timeline-desc">
+              Audited and reconciled daily performance data for 200+ ad campaigns across
+              500+ PAN-India cinema locations, reducing reporting discrepancies by ~20%.
+              Maintained 99%+ data accuracy across advertisement billing and GST records.
+              Built Excel campaign tracking dashboards (Pivot Tables, conditional formatting)
+              to monitor KPIs — on-time delivery, activation rate, utilisation — for
+              cross-functional stakeholder reporting.
+            </p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Excel Dashboards</span>
+              <span class="tl-tag">Data Analytics</span>
+              <span class="tl-tag">KPI Reporting</span>
+              <span class="tl-tag">Data Validation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal-up delay-2">
+          <div class="timeline-marker" aria-hidden="true">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Technical Support Engineer — Linux &amp; Data Operations</h3>
+              <span class="timeline-period">Nov 2021 – Jan 2024</span>
+            </div>
+            <p class="timeline-org">Aforeserve.com Ltd.</p>
+            <p class="timeline-desc">
+              Built structured Excel tracking systems for 300+ weekly content assets across
+              a 50+ theatre network, improving license registration accuracy by ~30%.
+              Reduced MTTR for content-delivery incidents by diagnosing technical failures
+              on digital cinema systems (Linux servers, Cineblaster, projector hardware).
+              Documented recurring failure patterns via structured incident logs, reducing
+              repeat escalations by ~25%.
+            </p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Linux CLI</span>
+              <span class="tl-tag">Data Tracking</span>
+              <span class="tl-tag">Incident Management</span>
+              <span class="tl-tag">Excel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item reveal-up delay-3">
+          <div class="timeline-marker" aria-hidden="true">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Machine Learning Development</h3>
+              <span class="timeline-period">Ongoing</span>
+            </div>
+            <p class="timeline-org">Personal Projects · Predictive Modeling</p>
+            <p class="timeline-desc">
+              Built and evaluated multiple end-to-end ML pipelines covering regression and
+              classification tasks. Projects span healthcare (Heart Disease, Diabetes),
+              education (Student Marks), and consumer tech (Laptop Price Prediction),
+              covering feature engineering, model selection, and evaluation metrics.
+            </p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Scikit-Learn</span>
+              <span class="tl-tag">Regression</span>
+              <span class="tl-tag">Classification</span>
+              <span class="tl-tag">Feature Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item reveal-up delay-4">
+          <div class="timeline-marker" aria-hidden="true">
+            <i class="fa-solid fa-chart-bar"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Data Analytics Practice</h3>
+              <span class="timeline-period">Ongoing</span>
+            </div>
+            <p class="timeline-org">Personal Projects · Exploratory Data Analysis</p>
+            <p class="timeline-desc">
+              Conducted deep exploratory data analysis on diverse real-world datasets using
+              Pandas, NumPy, Matplotlib, and Seaborn. Developed skills in identifying
+              patterns, handling missing data, outlier detection, and translating raw data
+              into visual narratives.
+            </p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Pandas</span>
+              <span class="tl-tag">NumPy</span>
+              <span class="tl-tag">Matplotlib</span>
+              <span class="tl-tag">Seaborn</span>
+              <span class="tl-tag">EDA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="timeline-item reveal-up delay-5">
+          <div class="timeline-marker" aria-hidden="true">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Database &amp; SQL Development</h3>
+              <span class="timeline-period">Ongoing</span>
+            </div>
+            <p class="timeline-org">Personal Practice · MySQL &amp; MariaDB</p>
+            <p class="timeline-desc">
+              Developed proficiency in relational database design, SQL querying, and data
+              manipulation using MySQL and MariaDB. Practiced optimising queries for
+              analytical workloads and integrating databases with Python-based data pipelines.
+            </p>
+            <div class="timeline-tags">
+              <span class="tl-tag">MySQL</span>
+              <span class="tl-tag">MariaDB</span>
+              <span class="tl-tag">SQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CERTIFICATIONS  (updated per resume)
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="certifications" aria-labelledby="certs-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Achievements</span>
+        <h2 id="certs-heading" class="section-title">Certifications</h2>
+        <p class="section-subtitle">Credentials earned and in progress — expanding expertise across the data stack.</p>
+      </div>
+
+      <div class="certs-grid">
+
+        <!-- Cert 1: Advanced Python — EARNED -->
+        <div class="cert-card reveal-up delay-1"
+             aria-label="Advanced Python certification - Programming Hub">
+          <div class="cert-icon-wrap">
+            <i class="fa-brands fa-python" aria-hidden="true"></i>
+          </div>
+          <div class="cert-body">
+            <div class="cert-status cert-status-earned">&#10003; Earned</div>
+            <h3 class="cert-title">Advanced Python</h3>
+            <p class="cert-issuer">Programming Hub</p>
+          </div>
+          <div class="cert-badge-placeholder" aria-hidden="true">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+        </div>
+
+        <!-- Cert 2: Advanced HTML — EARNED -->
+        <div class="cert-card reveal-up delay-2"
+             aria-label="Advanced HTML certification - Programming Hub">
+          <div class="cert-icon-wrap">
+            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+          </div>
+          <div class="cert-body">
+            <div class="cert-status cert-status-earned">&#10003; Earned</div>
+            <h3 class="cert-title">Advanced HTML</h3>
+            <p class="cert-issuer">Programming Hub</p>
+          </div>
+          <div class="cert-badge-placeholder" aria-hidden="true">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+        </div>
+
+        <!-- Cert 3: CSS — EARNED -->
+        <div class="cert-card reveal-up delay-3"
+             aria-label="CSS certification - Programming Hub">
+          <div class="cert-icon-wrap">
+            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+          </div>
+          <div class="cert-body">
+            <div class="cert-status cert-status-earned">&#10003; Earned</div>
+            <h3 class="cert-title">CSS</h3>
+            <p class="cert-issuer">Programming Hub</p>
+          </div>
+          <div class="cert-badge-placeholder" aria-hidden="true">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+        </div>
+
+        <!-- Cert 4: Google Data Analytics — IN PROGRESS -->
+        <div class="cert-card cert-card-coming reveal-up delay-4"
+             aria-label="Google Data Analytics - in progress">
+          <div class="cert-icon-wrap">
+            <i class="fa-brands fa-google" aria-hidden="true"></i>
+          </div>
+          <div class="cert-body">
+            <div class="cert-status cert-status-coming">In Progress</div>
+            <h3 class="cert-title">Google Data Analytics Certificate</h3>
+            <p class="cert-issuer">Google / Coursera</p>
+          </div>
+          <div class="cert-badge-placeholder" aria-hidden="true">
+            <i class="fa-solid fa-award"></i>
+          </div>
+        </div>
+
+        <!-- Cert 5: ML Specialization — Coming Soon -->
+        <div class="cert-card cert-card-coming reveal-up delay-5"
+             aria-label="ML certification - coming soon">
+          <div class="cert-icon-wrap">
+            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+          </div>
+          <div class="cert-body">
+            <div class="cert-status cert-status-coming">Coming Soon</div>
+            <h3 class="cert-title">Machine Learning Specialization</h3>
+            <p class="cert-issuer">DeepLearning.AI / Coursera</p>
+          </div>
+          <div class="cert-badge-placeholder" aria-hidden="true">
+            <i class="fa-solid fa-award"></i>
+          </div>
+        </div>
+
+        <!-- Cert 6: SQL — Coming Soon -->
+        <div class="cert-card cert-card-coming reveal-up delay-6"
+             aria-label="SQL certification - coming soon">
+          <div class="cert-icon-wrap">
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
+          </div>
+          <div class="cert-body">
+            <div class="cert-status cert-status-coming">Coming Soon</div>
+            <h3 class="cert-title">SQL for Data Analysis</h3>
+            <p class="cert-issuer">Google / Coursera</p>
+          </div>
+          <div class="cert-badge-placeholder" aria-hidden="true">
+            <i class="fa-solid fa-award"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       RESUME DOWNLOAD
+  ═══════════════════════════════════════════ -->
+  <section class="section section-alt section-resume" id="resume" aria-labelledby="resume-heading">
+    <div class="container">
+      <div class="resume-block reveal-up">
+
+        <div class="resume-content">
+          <span class="section-eyebrow">Download</span>
+          <h2 id="resume-heading" class="section-title">My Resume</h2>
+          <p class="resume-desc">
+            A full breakdown of my skills, projects, and experience — optimised for
+            ATS systems and human recruiters alike.
+          </p>
+          <a href="Rohan_Pagare_Resume.pdf"
+             class="btn btn-primary btn-lg resume-dl-btn"
+             download="Rohan_Pagare_Resume.pdf"
+             aria-label="Download Rohan Pagare Resume PDF">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="resume-visual" aria-hidden="true">
+          <div class="resume-card-mock">
+            <div class="rcm-line rcm-line-name"></div>
+            <div class="rcm-line rcm-line-title"></div>
+            <div class="rcm-divider"></div>
+            <div class="rcm-line rcm-line-short"></div>
+            <div class="rcm-line rcm-line-mid"></div>
+            <div class="rcm-line rcm-line-long"></div>
+            <div class="rcm-line rcm-line-short"></div>
+            <div class="rcm-divider"></div>
+            <div class="rcm-line rcm-line-mid"></div>
+            <div class="rcm-line rcm-line-long"></div>
+            <div class="rcm-line rcm-line-mid"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT  — real email wired up
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 id="contact-heading" class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open to full-time roles, internships, freelance projects, and collaborations.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card reveal-up delay-1">
+          <div class="contact-card-icon" aria-hidden="true">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <h3 class="contact-card-title">GitHub</h3>
+          <p class="contact-card-desc">Browse my repositories, code, and open-source work.</p>
+          <a href="https://github.com/rohanjtech/"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-ghost contact-btn"
+             aria-label="Visit GitHub profile">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View GitHub
+          </a>
+        </div>
+
+        <div class="contact-card contact-card-primary reveal-up delay-2">
+          <div class="contact-card-icon" aria-hidden="true">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <h3 class="contact-card-title">LinkedIn</h3>
+          <p class="contact-card-desc">Connect professionally and let's talk opportunities.</p>
+          <a href="https://www.linkedin.com/in/rohanpagare-analytics/"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-primary contact-btn"
+             aria-label="Visit LinkedIn profile">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Connect on LinkedIn
+          </a>
+        </div>
+
+        <div class="contact-card reveal-up delay-3">
+          <div class="contact-card-icon" aria-hidden="true">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h3 class="contact-card-title">Email</h3>
+          <p class="contact-card-desc">Drop me a message for project inquiries or roles.</p>
+          <a href="mailto:rohanpagare2407@gmail.com"
+             class="btn btn-ghost contact-btn"
+             aria-label="Send email to rohanpagare2407@gmail.com">
+            <i class="fa-solid fa-paper-plane"></i> Send Email
+          </a>
+        </div>
+
+      </div>
+
+      <div class="contact-availability reveal-up">
+        <div class="avail-dot" aria-hidden="true"></div>
+        <span>Currently available for new opportunities · Mumbai, India / Remote</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER  (no <RP/> logo — plain name)
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo" aria-label="Footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <a href="#home" class="footer-name-link" aria-label="Back to top">
+            Rohan Pagare
+          </a>
+          <p class="footer-tagline">Data Analyst · ML Practitioner · Python Developer</p>
+        </div>
+
+        <div class="footer-links" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://github.com/rohanjtech/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="GitHub" class="social-icon-link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rohanpagare-analytics/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" class="social-icon-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:rohanpagare2407@gmail.com"
+             aria-label="Email" class="social-icon-link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="footerYear"></span> Rohan Pagare. All rights reserved.
+        </p>
+        <p class="footer-made">
+          Built with <i class="fa-solid fa-heart footer-heart" aria-label="love"></i> &amp; Python passion
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
