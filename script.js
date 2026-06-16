@@ -39,11 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
   navToggle.addEventListener('click', toggleMenu);
   navToggle.addEventListener('touchend', toggleMenu, { passive: false });
 
-  /* Close on any nav link click or touch */
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => closeMenu());
-    link.addEventListener('touchend', () => closeMenu(), { passive: true });
+/* Close menu after navigation */
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    setTimeout(closeMenu, 150);
   });
+});
 
   /* Close on Escape key */
   document.addEventListener('keydown', e => {
@@ -59,14 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ) closeMenu();
   });
 
-  /* Close on outside touch */
-  document.addEventListener('touchend', e => {
-    if (
-      navLinks.classList.contains('open') &&
-      !navLinks.contains(e.target) &&
-      !navToggle.contains(e.target)
-    ) closeMenu();
-  }, { passive: true });
 
   /* Close on resize above mobile */
   window.addEventListener('resize', () => {
