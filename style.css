@@ -1946,3 +1946,164 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
     gap: 0.25rem;
   }
 }
+/* ================================================================
+   FIX 1 — Hero LEFT ALIGN — Badge + Name + All Content
+================================================================ */
+
+/* Force the hero container to left */
+.hero-container--left {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding-left: clamp(1.5rem, 6vw, 8rem) !important;
+  max-width: 700px !important;
+  width: 100% !important;
+}
+
+/* Badge left */
+.hero-container--left .hero-badge {
+  display: inline-flex !important;
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Name left */
+.hero-container--left .hero-name {
+  text-align: left !important;
+}
+
+/* Rotating title left */
+.hero-container--left .hero-titles {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+
+/* Tagline left */
+.hero-container--left .hero-tagline {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* CTA buttons left */
+.hero-container--left .hero-cta {
+  justify-content: flex-start !important;
+}
+
+/* Stats left */
+.hero-container--left .hero-stats {
+  justify-content: flex-start !important;
+}
+
+/* Mobile — center everything back on small screens */
+@media (max-width: 640px) {
+  .hero-container--left {
+    text-align: center !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-inline: auto !important;
+    max-width: 100% !important;
+  }
+
+  .hero-container--left .hero-badge {
+    justify-content: center !important;
+    margin-inline: auto !important;
+  }
+
+  .hero-container--left .hero-name {
+    text-align: center !important;
+  }
+
+  .hero-container--left .hero-titles {
+    justify-content: center !important;
+  }
+
+  .hero-container--left .hero-tagline {
+    text-align: center !important;
+    margin-inline: auto !important;
+  }
+
+  .hero-container--left .hero-cta {
+    justify-content: center !important;
+  }
+
+  .hero-container--left .hero-stats {
+    justify-content: center !important;
+  }
+}
+
+/* ================================================================
+   FIX 2 — Mobile Nav Toggle Clickable Fix
+================================================================ */
+
+/* Make sure navbar is above everything */
+.navbar {
+  z-index: 9999 !important;
+}
+
+/* Toggle button must be on top and clickable */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.5rem;
+  z-index: 10000 !important;
+  position: relative !important;
+  cursor: pointer !important;
+  background: transparent !important;
+  border: none !important;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile menu overlay — must cover full screen */
+@media (max-width: 640px) {
+  .nav-toggle {
+    display: flex !important;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(5, 8, 16, 0.98) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.75rem !important;
+    z-index: 9998 !important;
+    padding: 2rem !important;
+    overflow-y: auto !important;
+  }
+
+  .nav-links.open {
+    display: flex !important;
+    animation: menuFadeIn 0.25s ease forwards !important;
+  }
+
+  .nav-link {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    padding: 0.8rem 2rem !important;
+    color: var(--text-primary) !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .nav-resume-btn {
+    margin-top: 1rem !important;
+    font-size: 1rem !important;
+    padding: 0.75rem 2rem !important;
+  }
+}
